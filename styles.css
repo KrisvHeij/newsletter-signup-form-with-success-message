@@ -17,3 +17,96 @@
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--c-blue-800);
+  overflow: clip;
+}
+
+/* Content styles */
+.content-inner {
+  padding: 2.5rem 1.5rem;
+}
+
+.content-inner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content-inner > p {
+  margin-bottom: 2rem;
+}
+
+/* List items */
+.list-container {
+  margin-bottom: 2rem;
+}
+.list-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.list-item > p {
+  margin-left: 1rem;
+}
+
+/* Form */
+.form-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-label {
+  font-size: 0.8rem;
+  font-weight: var(--fw-bold);
+  margin-bottom: 0.5rem;
+}
+
+#validation-error {
+  color: var(--c-red);
+  display: none;
+}
+
+input,
+button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+input {
+  font-size: inherit;
+  border: 1px solid var(--c-grey);
+  margin-bottom: 1.5rem;
+}
+
+input::placeholder {
+  color: var(--c-grey);
+}
+
+.btn {
+  background-color: var(--c-blue-800);
+  color: var(--c-white);
+  font-weight: var(--fw-bold);
+  border: none;
+}
+
+
+
+
+
+/* Success Message */
+#success-msg {
+  display: none;
+}
