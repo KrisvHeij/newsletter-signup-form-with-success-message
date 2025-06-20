@@ -29,12 +29,11 @@ p {
 body {
   font-family: "Roboto", sans-serif;
   color: var(--c-blue-800);
-  overflow: clip;
 }
 
 /* Content styles */
 .content-inner {
-  padding: 2.5rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .content-inner h1 {
@@ -50,6 +49,7 @@ body {
 .list-container {
   margin-bottom: 2rem;
 }
+
 .list-item {
   display: flex;
   align-items: flex-start;
@@ -81,7 +81,7 @@ input,
 button {
   display: block;
   width: 100%;
-  padding: 1rem;
+  padding: 1.25rem;
   border-radius: 10px;
 }
 
@@ -95,11 +95,20 @@ input::placeholder {
   color: var(--c-grey);
 }
 
+input:focus {
+  outline: 1px solid var(--c-blue-700);
+}
+
 .btn {
   background-color: var(--c-blue-800);
   color: var(--c-white);
   font-weight: var(--fw-bold);
+  letter-spacing: 1px;
   border: none;
+}
+
+.btn:hover {
+  background:linear-gradient(to right, hsl(347, 100%, 67%),hsl(13, 100%, 62%));
 }
 
 
