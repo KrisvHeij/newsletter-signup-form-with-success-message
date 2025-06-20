@@ -1,0 +1,19 @@
+/* Custom properties and values */
+:root {
+  --c-blue-800: hsl(234, 29%, 20%);
+  --c-blue-700: hsl(235, 18%, 26%);
+  --c-grey: hsl(0, 0%,58%);
+  --c-white: hsl(0, 0%, 100%);
+  --c-red: hsl(4, 100%, 67%);
+  --fw-regular: 400;
+  --fw-bold: 700; 
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+

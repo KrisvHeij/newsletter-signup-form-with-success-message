@@ -10,6 +10,12 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
@@ -52,7 +58,10 @@
           <!-- Sign-up form start -->
           <div class="form">
             <div class="form-group">
-              <label for="email">Email address</label>
+              <div class="form-label">
+                <label for="email">Email address</label>
+                <span>Valid email required</span>
+              </div>
               <input
                 id="email"
                 type="email"
