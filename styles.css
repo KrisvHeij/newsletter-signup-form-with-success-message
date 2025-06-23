@@ -116,6 +116,12 @@ input:focus {
   background:linear-gradient(to right, hsl(347, 100%, 67%),hsl(13, 100%, 62%));
 }
 
+/* Success Message */
+#success-msg {
+  display: none;
+}
+
+
 /* Media query > 376px */
 @media (min-width: 23.5rem) {
   body {
@@ -123,7 +129,6 @@ input:focus {
     padding: 2rem 1rem;
   }
 
-  /* Container */
   .container {
   background-color: var(--c-white);
   border-radius: 40px;
@@ -178,8 +183,3 @@ input:focus {
   }
 }
 
-
-/* Success Message */
-#success-msg {
-  display: none;
-}
