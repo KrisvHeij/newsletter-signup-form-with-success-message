@@ -133,7 +133,14 @@ input:focus {
   background-color: var(--c-white);
   border-radius: 40px;
   overflow: clip;
-}
+  }
+
+  .content-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 /* Media query > 768px */
@@ -162,16 +169,11 @@ input:focus {
 
 /* Media query > 992px */ 
 @media (min-width: 62rem) {
-  .container {
-    max-width: 64rem;
-  }
+
 
   .content-inner {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 4rem;
+    max-width: 90%;
+    padding: 4rem 2rem 4rem 4rem;
   }
 
   .content-inner h1 {
