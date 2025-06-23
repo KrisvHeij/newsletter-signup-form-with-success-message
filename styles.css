@@ -30,6 +30,13 @@ p {
 body {
   font-family: "Roboto", sans-serif;
   color: var(--c-blue-800);
+  position: relative;
+  
+}
+
+.container {
+  /* display: none; */
+  
 }
 
 /* Content styles */
@@ -117,15 +124,60 @@ input:focus {
 
 /* Form error states */
 
-#validation-error {
+.error-text {
   color: var(--c-red);
   display: none;
+}
+
+.error-input {
+  background-color: hsl(4, 100%, 67%, 0.1);
+  border-color: var(--c-red);
+  color: var(--c-red);
+}
+
+.error-input::placeholder {
+  color: var(--c-red);
+}
+
+.error-input:focus {
+  outline: transparent;
 }
 
 /* Success Message */
 
 #success-msg {
   display: none;
+}
+
+.succes-msg-outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: var(--c-white);
+  padding: 3rem 1.5rem;
+}
+
+.success-msg-inner {
+  margin-top: 7rem;
+}
+
+.success-msg-inner img {
+  margin-bottom: 2rem;
+}
+
+.success-msg-inner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.email-confirm {
+  font-weight: var(--fw-bold);
 }
 
 /* Media query > 376px */
@@ -170,6 +222,10 @@ input:focus {
     display: flex;
     padding: 1.5rem 1.5rem 1.5rem 0;
   }
+
+  /* Success Message */
+
+
 }
 
 /* Media query > 992px */ 

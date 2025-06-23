@@ -60,7 +60,9 @@
             <div class="form-group">
               <div class="form-label">
                 <label for="email">Email address</label>
-                <span id="validation-error">Valid email required</span>
+                <span id="validation-error-text" class="error-text"
+                  >Valid email required</span
+                >
               </div>
               <input
                 id="email"
@@ -80,16 +82,21 @@
     </main>
 
     <!-- Success message start -->
-    <div id="success-msg" class="succes-msg-outer">
-      <div class="success-msg-inner">
-        <img src="./assets/images/icon-success.svg" alt="" />
-        <h2>Thanks for subscribing!</h2>
-        <p>
-          A confirmation email has been sent to ash@loremcompany.com. Please
-          open it and click the button inside to confirm your subscription.
-        </p>
+    <div id="success-msg">
+      <div class="succes-msg-outer">
+        <div class="success-msg-inner">
+          <img src="./assets/images/icon-success.svg" alt="" />
+          <h2>Thanks for subscribing!</h2>
+          <p>
+            A confirmation email has been sent to
+            <span id="email-confirm" class="email-confirm"
+              >ash@loremcompany.com</span
+            >. Please open it and click the button inside to confirm your
+            subscription.
+          </p>
+        </div>
+        <button id="dismiss" class="btn">Dismiss message</button>
       </div>
-      <button id="dismiss" class="btn">Dismiss message</button>
     </div>
     <!-- Success message end -->
   </body>
