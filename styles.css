@@ -156,7 +156,6 @@ input:focus {
     display: flex;
     flex-direction: row-reverse;
     border-radius: 20px;
-    max-width: 
   }
 
   picture {
