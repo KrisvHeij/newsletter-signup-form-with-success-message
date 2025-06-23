@@ -1,4 +1,5 @@
 /* Custom properties and values */
+
 :root {
   --c-blue-800: hsl(234, 29%, 20%);
   --c-blue-700: hsl(235, 18%, 26%);
@@ -32,6 +33,7 @@ body {
 }
 
 /* Content styles */
+
 .img-container img {
   width: 100%;
   display: block;
@@ -50,6 +52,7 @@ body {
 }
 
 /* List items */
+
 .list-container {
   margin-bottom: 2rem;
 }
@@ -65,6 +68,7 @@ body {
 }
 
 /* Form */
+
 .form-label {
   display: flex;
   justify-content: space-between;
@@ -74,11 +78,6 @@ body {
   font-size: 0.8rem;
   font-weight: var(--fw-bold);
   margin-bottom: 0.5rem;
-}
-
-#validation-error {
-  color: var(--c-red);
-  display: none;
 }
 
 input,
@@ -116,11 +115,18 @@ input:focus {
   background:linear-gradient(to right, hsl(347, 100%, 67%),hsl(13, 100%, 62%));
 }
 
-/* Success Message */
-#success-msg {
+/* Form error states */
+
+#validation-error {
+  color: var(--c-red);
   display: none;
 }
 
+/* Success Message */
+
+#success-msg {
+  display: none;
+}
 
 /* Media query > 376px */
 @media (min-width: 23.5rem) {
