@@ -87,6 +87,7 @@ button {
   width: 100%;
   padding: 1.25rem;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 input {
@@ -109,7 +110,6 @@ input:focus {
   font-weight: var(--fw-bold);
   letter-spacing: 1px;
   border: none;
-  cursor: pointer;
 }
 
 .btn:hover {
