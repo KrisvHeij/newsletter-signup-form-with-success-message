@@ -122,18 +122,15 @@ input:focus {
   display: none;
 }
 
-.container {
-  display: none;
-}
-
 /* Success Message */
 
-#success-msg {
-  display: block;
+.success-msg-container {
+  height: 100vh;
 }
 
 .success-msg-outer {
-  height: 100vh;
+  max-width: 30rem;
+  height: 100%;
   background-color: var(--c-white);
   display: flex;
   flex-direction: column;
@@ -180,23 +177,34 @@ input:focus {
 
   /* Success Message */
 
+  .success-msg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .success-msg-outer {
-  height: calc(100vh - 8rem);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 8rem;
-  padding: 1.5rem;
-}
+    height: auto;
+    border-radius: 20px;
+    padding-inline: 3rem;
+  }
 
-.success-msg-inner img {
-  margin-bottom: 2rem;
-}
+  .success-msg-inner {
+    margin-top: 0;
+  }
 
-.success-msg-inner h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
+  .success-msg-inner img {
+    margin-bottom: 2rem;
+  }
+
+  .success-msg-inner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .success-msg-inner p {
+    margin-bottom: 2rem;
+  }
 }
 
 /* Media query > 768px */
@@ -224,8 +232,6 @@ input:focus {
 
 /* Media query > 992px */ 
 @media (min-width: 62rem) {
-
-
   .content-inner {
     max-width: 90%;
     padding: 4rem 2rem 4rem 4rem;
@@ -238,5 +244,18 @@ input:focus {
   .list-container {
     margin-bottom: 1rem;
   }
+
+  /* Success message */
+
+  .success-msg-inner h2 {
+    font-size: 3.5rem;
+  }
 }
 
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
