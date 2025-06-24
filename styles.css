@@ -128,11 +128,11 @@ input:focus {
   display: none;
 }
 
-/* Media query > 376px */
-@media (min-width: 23.5rem) {
+/* Media query > 480px */
+@media (min-width: 30rem) {
   body {
     background-color: var(--c-blue-700);
-    padding: 2rem 1rem;
+    /* padding: 2rem 1rem; */
   }
 
   .container {
