@@ -117,9 +117,18 @@ input:focus {
 
 /* Form error states */
 
-#validation-error {
+.validation-error {
   color: var(--c-red);
-  display: none;
+}
+
+.validation-error-email {
+  color: var(--c-red);
+  background-color: hsl(4, 100%, 67%, 0.2);
+  border-color: var(--c-red);
+}
+
+.validation-error-email:focus {
+  outline: transparent;
 }
 
 /* Success Message */
