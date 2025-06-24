@@ -11,10 +11,15 @@ function validateEmail() {
   const validEmail = regex.test(email);
 
   if(email === "" || !validEmail) {
-    console.log("please provide a valid email");
-  }
-  
+    validationErrorText.classList.remove("hidden");
+    validationErrorText.classList.add("show");
+    emailInput.classList.add("validation-error-email");
+  } 
 }
 
 
-submitBtn.addEventListener("click", checkEmail);
+emailInput.addEventListener("change", () => {
+  console.log("change")
+});
+
+submitBtn.addEventListener("click", validateEmail);
