@@ -133,12 +133,16 @@ input:focus {
 }
 
 .success-msg-outer {
-  height: calc(100vh - 8rem);
+  height: 100vh;
+  background-color: var(--c-white);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 3rem 1.5rem;
+}
+
+.success-msg-inner {
   margin-top: 8rem;
-  padding: 1.5rem;
 }
 
 .success-msg-inner img {
@@ -173,6 +177,26 @@ input:focus {
     flex-direction: column;
     justify-content: center;
   }
+
+  /* Success Message */
+
+  .success-msg-outer {
+  height: calc(100vh - 8rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 8rem;
+  padding: 1.5rem;
+}
+
+.success-msg-inner img {
+  margin-bottom: 2rem;
+}
+
+.success-msg-inner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
 }
 
 /* Media query > 768px */
