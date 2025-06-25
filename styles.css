@@ -236,7 +236,9 @@ input:focus {
     width: 100%;
     height: 100%;
     display: flex;
-    padding: 1.5rem 1.5rem 1.5rem 0;
+    padding-block: 1.5rem;
+    padding-inline-start: 0;
+    padding-inline-end: 1.5rem;
   }
 }
 
@@ -244,7 +246,9 @@ input:focus {
 @media (min-width: 62rem) {
   .content-inner {
     max-width: 90%;
-    padding: 4rem 2rem 4rem 4rem;
+    padding-block: 4rem;
+    padding-inline-start: 4rem;
+    padding-inline-end: 2rem;
   }
 
   .content-inner h1 {
