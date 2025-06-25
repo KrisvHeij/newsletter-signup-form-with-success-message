@@ -24,22 +24,18 @@ function validateEmail() {
 }
 
 function showCloseMessage() {
-  if (!containerEl.classList.contains("hidden")) {
-    containerEl.classList.add("hidden");
-    successMsg.classList.remove("hidden");
-    successMsg.classList.add("show");
-  } else {
-    containerEl.classList.remove("hidden");
-    successMsg.classList.remove("show");
-    successMsg.classList.add("hidden");
-  }
+  containerEl.classList.toggle("hidden");
+  successMsg.classList.toggle("hidden");
+  successMsg.classList.toggle("show");
 }
 
 function removeErrorStates() {
   validationErrorText.classList.add("hidden");
-    validationErrorText.classList.remove("show");
-    emailInput.classList.remove("validation-error-email");
+  validationErrorText.classList.remove("show");
+  emailInput.classList.remove("validation-error-email");
 }
+
+// Event Listeners
 
 emailInput.addEventListener("focus", removeErrorStates);
 submitBtn.addEventListener("click", validateEmail);
