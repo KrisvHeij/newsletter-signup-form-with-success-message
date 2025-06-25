@@ -127,6 +127,10 @@ input:focus {
   border-color: var(--c-red);
 }
 
+.validation-error-email::placeholder {
+  color: inherit;
+}
+
 .validation-error-email:focus {
   outline: transparent;
 }

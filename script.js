@@ -35,13 +35,12 @@ function showCloseMessage() {
   }
 }
 
+function removeErrorStates() {
+  validationErrorText.classList.add("hidden");
+    validationErrorText.classList.remove("show");
+    emailInput.classList.remove("validation-error-email");
+}
 
-
-
-// emailInput.addEventListener("blur", () => {
-//   console.log("input changed")
-// });
-
+emailInput.addEventListener("focus", removeErrorStates);
 submitBtn.addEventListener("click", validateEmail);
-
 dismissBtn.addEventListener("click", showCloseMessage);
